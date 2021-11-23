@@ -940,9 +940,7 @@ final public class AnimationView: LottieView {
     }
     
     self.animationContext = animationContext
-    
-    guard self.window != nil else { waitingToPlayAnimation = true; return }
-    
+        
     animationID = animationID + 1
     activeAnimationName = AnimationView.animationName + String(animationID)
     
